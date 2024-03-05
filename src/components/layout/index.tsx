@@ -10,6 +10,13 @@ const MainLayout = () => {
                     <button className="bg-[#1e1e1e] px-[15px] py-[5px] border-none text-white">გასვლა</button>
                 </div>
             </div>
+            <div className="flex bg-[#e8eaec]">
+                <ul>
+                    <li className="">
+                       <Link className="text-[#616365] text-[13px] h-10" to="#">მთავარი</Link>
+                    </li>
+                </ul>
+            </div>
             <Outlet />
         </div>
     )
