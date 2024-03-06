@@ -1,6 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "CustomFont1";
+  src: url("../src/assets/fonts/1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CustomFont2";
+  src: url("../src/assets/fonts/2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "CustomFont3";
+  src: url("../src/assets/fonts/3.woff2") format("woff2");
+}
 /* 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -21,6 +36,12 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "CustomFont2";
+  line-height: 1.428571429;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
