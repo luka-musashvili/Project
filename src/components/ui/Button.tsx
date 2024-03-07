@@ -1,5 +1,4 @@
 import { Button, ButtonProps } from "antd";
-// import clsx from 'clsx';
 
 interface CustomButtonProps extends ButtonProps {
   customClassName?: string;

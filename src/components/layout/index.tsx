@@ -23,7 +23,7 @@ const MainLayout = () => {
   return (
     <div>
       <div className="bg-[#616365] flex flex-wrap gap-4 justify-between items-center px-5 py-[6px]">
-        <h5 className="text-white font-[13px]  md:whitespace-nowrap text-center md:text-start">
+        <h5 className="text-white font-[13px] md:whitespace-nowrap text-center md:text-start">
           იუსტიციის სახლის სერვისების მართვის ერთიანი სისტემა
         </h5>
         <div className="flex flex-1 md:flex-none justify-between items-center gap-5">
@@ -42,7 +42,7 @@ const MainLayout = () => {
           {pages.map(({ label, to }) => (
             <li className="">
               <Link
-                className="block px-5 py-3 hover:bg-[#ffffff99] text-[#616365] text-[13px] h-10"
+                className="block px-5 py-3 hover:bg-[#ffffff99] text-[#616365] text-[13px] h-10 font-bold"
                 to={to}
               >
                 {label}
