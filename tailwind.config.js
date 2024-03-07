@@ -10,10 +10,11 @@ export default {
       xl: "1200px",
       xxl: "1600px",
     },
-    borderWidth: {
-      DEFAULT: "1px",
+    extend: {
+      colors: {
+        primary: "#7ab800",
+      },
     },
-    extend: {},
   },
   plugins: [],
   corePlugins: {
