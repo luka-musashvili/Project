@@ -1,22 +1,16 @@
 import { Button, ButtonProps } from "antd";
+import clsx from "clsx";
 
-interface CustomButtonProps extends ButtonProps {
-  customClassName?: string;
-}
-
-const ButtonComponent: React.FC<CustomButtonProps> = ({
-  customClassName,
-  children,
-  ...rest
-}) => {
+const ButtonComponent: React.FC<ButtonProps> = ({ children, ...rest }) => {
   const { type, htmlType, className } = rest;
-  const baseClassName = " w-[201px]";
+  let combinedClassName = clsx(className); // დამატებითი კლასები სამომავლოდ
+  console.log(combinedClassName);
 
   return (
     <Button
       type={type}
       htmlType={htmlType}
-      className={className + baseClassName}
+      className={combinedClassName}
       {...rest}
     >
       {children}
