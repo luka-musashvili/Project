@@ -1,31 +1,25 @@
-import { Button as AntButton, ButtonProps } from "antd";
+import { Button, ButtonProps } from "antd";
 import clsx from "clsx";
 
-interface CustomButtonProps extends ButtonProps {
-  width?: string;
-  height?: string;
-}
-
-const Button: React.FC<CustomButtonProps> = ({
-  width,
-  height,
+const ButtonComponent: React.FC<ButtonProps> = ({
   children,
   className,
   ...rest
 }) => {
   const { type, htmlType } = rest;
+  let combinedClassName = clsx(className); // დამატებითი კლასებისთვის
+  console.log(combinedClassName);
 
   return (
-    <AntButton
+    <Button
       type={type}
-      className={clsx("rounded-none border-none", className)}
       htmlType={htmlType}
-      style={{ width, height }}
+      className={combinedClassName}
       {...rest}
     >
       {children}
-    </AntButton>
+    </Button>
   );
 };
 
-export default Button;
+export default ButtonComponent;

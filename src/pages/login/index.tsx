@@ -1,4 +1,4 @@
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 import ButtonComponent from "../../components/ui/Button";
 
 const onFinish = (values: any) => {
@@ -17,7 +17,7 @@ type FieldType = {
 const LoginPage = () => {
   return (
     <div className="flex flex-col h-screen">
-      <header className="flex justify-center items-center h-[83px] border-solid border-b-2 border-l-0 border-r-0 border-t-0 border-[#dfe1e3] ">
+      <header className="flex justify-center items-center h-[85px] border-solid border-b-2 border-l-0 border-r-0 border-t-0 border-[#dfe1e3] ">
         <img src="../src/assets/ui/logo.png" />
       </header>
       <main className="flex-grow">
@@ -58,7 +58,11 @@ const LoginPage = () => {
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-            <ButtonComponent type="primary" htmlType="submit" height="50px">
+            <ButtonComponent
+              type="primary"
+              htmlType="submit"
+              className="h-[55px]"
+            >
               შესვლა
             </ButtonComponent>
           </Form.Item>
