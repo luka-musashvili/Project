@@ -7,8 +7,7 @@ const ButtonComponent: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   const { type, htmlType } = rest;
-  let combinedClassName = clsx(className); // დამატებითი კლასებისთვის
-  console.log(combinedClassName);
+  let combinedClassName = clsx("rounded-none border-none", className); // დამატებითი კლასებისთვის
 
   return (
     <Button
