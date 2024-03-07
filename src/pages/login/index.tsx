@@ -1,4 +1,4 @@
-import { Button, Form, Input } from "antd";
+import { Form, Input } from "antd";
 import ButtonComponent from "../../components/ui/Button";
 
 const onFinish = (values: any) => {
@@ -58,7 +58,11 @@ const LoginPage = () => {
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-            <ButtonComponent type="primary" htmlType="submit" height="50px">
+            <ButtonComponent
+              type="primary"
+              htmlType="submit"
+              className=" h-[55px]"
+            >
               შესვლა
             </ButtonComponent>
           </Form.Item>

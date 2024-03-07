@@ -1,20 +1,25 @@
 import { Button, ButtonProps } from "antd";
+// import clsx from 'clsx';
 
 interface CustomButtonProps extends ButtonProps {
-  width?: string;
-  height?: string;
+  customClassName?: string;
 }
 
 const ButtonComponent: React.FC<CustomButtonProps> = ({
-  width,
-  height,
+  customClassName,
   children,
   ...rest
 }) => {
-  const { type, htmlType } = rest;
+  const { type, htmlType, className } = rest;
+  const baseClassName = " w-[201px]";
 
   return (
-    <Button type={type} htmlType={htmlType} style={{ width, height }} {...rest}>
+    <Button
+      type={type}
+      htmlType={htmlType}
+      className={className + baseClassName}
+      {...rest}
+    >
       {children}
     </Button>
   );
