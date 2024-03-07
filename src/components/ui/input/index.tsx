@@ -12,4 +12,13 @@ const Input = ({ className, ...rest }: ComponentProps) => {
   );
 };
 
+const PasswordInput = ({ className, ...rest }: ComponentProps) => (
+  <AntInput.Password
+    className={clsx("rounded-none shadow-inner", className)}
+    {...rest}
+  />
+);
+
+Input.Password = PasswordInput;
+
 export default Input;

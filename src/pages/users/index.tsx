@@ -107,16 +107,16 @@ const itemRender: PaginationProps["itemRender"] = (
   type,
   originalElement
 ) => {
-  //   if (type === "prev") {
-  //     return <a>Previous</a>;
-  //   }
-  //   if (type === "next") {
-  //     return <a>Next</a>;
-  //   }
+  if (type === "prev") {
+    return <div>წინა</div>;
+  }
+  if (type === "next") {
+    return <div>შემდეგი</div>;
+  }
 
-  //   if (type === "page") {
-  //     return <div className="h-full bg-primary">{_}</div>;
-  //   }
+  // if (type === "page") {
+  //   return <div className="h-full bg-primary">{_}</div>;
+  // }
   return originalElement;
 };
 
