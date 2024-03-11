@@ -58,6 +58,10 @@ ul {
   list-style: none;
 }
 
+button span {
+  font-family: "mtavruli";
+}
+
 .clear-btn {
   background-color: #999;
 }

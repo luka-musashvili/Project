@@ -1,5 +1,6 @@
 import { Form, Input } from "antd";
 import ButtonComponent from "../../components/ui/Button";
+import { FaAngleRight } from "react-icons/fa";
 
 const onFinish = (values: any) => {
   console.log("Success:", values);
@@ -58,12 +59,9 @@ const LoginPage = () => {
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-            <ButtonComponent
-              type="primary"
-              htmlType="submit"
-              className="h-[55px]"
-            >
-              შესვლა
+            <ButtonComponent type="primary" htmlType="submit" className=" ">
+              შესვლა{" "}
+              <FaAngleRight className=" text-[22px] align-top leading-4 w-[7.859px] h-4" />
             </ButtonComponent>
           </Form.Item>
         </Form>
